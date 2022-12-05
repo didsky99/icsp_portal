@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+IndexIgnore *.gif *.zip *.txt
+RewriteEngine On
+RewriteRule (.*)\.xml(.*) $1.php$2 [nocase]
+
+ 
+RewriteRule ^auth/resetpassword/([^/\.]+)/?$ resetpassword.php?ID=$1 [L]
+RewriteRule ^auth/newpassword/([^/\.]+)/?$ newpassword.php?ID=$1 [L]
+RewriteRule ^auth/verification/([^/\.]+)/?$ verifikasi_otp.php?ID=$1 [L]
+RewriteRule ^notifikasi/([^/\.]+)/?$ detailnotif.php?ID=$1 [L]
+
+RewriteRule ^donasi/([^/\.]+)/?$ donasi-detail.php?id=$1 [L]
+RewriteRule ^donasi/detail/([^/\.]+)/?$ donasi_verified.php?id=$1 [L]
+rewriterule ^donasi/list/([^/\.]+)/?$ data-donasi.php?id=$1 [L]
+RewriteRule ^checkinhistory/([^/\.]+)/?$ scan_history.php?ID=$1 [L]
+
+RewriteRule ^do.this save.php?ID=$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+ErrorDocument 404 https://sistempkn.my.id/
+</IfModule>
