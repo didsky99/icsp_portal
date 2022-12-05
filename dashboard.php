@@ -152,12 +152,6 @@ if ($length == 1) {
         });
     </script> -->
 </body>
-<?php
-include "controller/function/dropdown_location.php";
-include_once "controller/function/Decrypt.php";
-include_once "controller/function/Encrypt.php";
-include_once "controller/function/function_all.php";
-?>
 
 
 </html>
