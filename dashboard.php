@@ -35,7 +35,7 @@ if ($length == 1) {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>ICSP Portal</title>
     <meta name="description" content="ICSP Web Application Portal">
-    <link rel="icon" href="<?= $base_url ?>/assets/images/icsp.png">
+    <link rel="icon" href="<?= $base_url ?>assets/images/boxx.png">
     <link rel="apple-touch-icon" href="<?= $base_url ?>assets/img/icons/icon-96x96.png">
     <link rel="apple-touch-icon" sizes="152x152" href="<?= $base_url ?>assets/img/icons/icon-152x152.png">
     <link rel="apple-touch-icon" sizes="167x167" href="<?= $base_url ?>assets/img/icons/icon-167x167.png">
